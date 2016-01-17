@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :accounts
   resources :posts
   resources :users
-  #get '/books', to: "books#index"
+  root "users#index"
 end
